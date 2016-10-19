@@ -33,6 +33,7 @@ Help pages relevant to plugin development
 * :help write-plugin
 * :help add-plugin
 * :help write-compiler-plugin
+* :help write-local-help
 * :help usr_41.txt
 * :help:internal-variables " scopea a: , s:, l:, etc
 * :help expr-quote " string interpolation in vim \n 
