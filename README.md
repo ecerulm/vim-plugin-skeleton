@@ -31,6 +31,7 @@ This projects serves as a template to create new vim plugins
 Help pages relevant to plugin development
 
 * :help write-plugin
+* :help initialization " when are plugins loaded? after vimrc
 * :help add-plugin
 * :help write-compiler-plugin
 * :help write-local-help
