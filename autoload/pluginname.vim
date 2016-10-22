@@ -14,9 +14,9 @@ function! pluginname#myoperator(type, ...)
   if a:0 " Invoked from Visual model, use gv command
     silent execute "normal! gvy"
   elseif a:type ==# 'line'
-    silent execute "normal! '[V']y"
+    silent execute "normal! `[V`]y"
   else
-    silent execute "normal! '[v']y"
+    silent execute "normal! `[v`]y"
   endif
 
   " we have the "selected" text in @@ now
