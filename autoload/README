@@ -1,0 +1,5 @@
+Here is where most of the code for your plugins should go.
+
+If you put a lot of code in the plugin/ that will slow down vim startup
+time. You can put most of the functions here and will be loaded when
+they are used. So you delay the loading of the code until it's needed.

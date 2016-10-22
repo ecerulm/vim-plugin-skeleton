@@ -24,6 +24,7 @@ endfunction
 " the :<C-U> syntax removes any range that vim might have inserted
 " :help using-<Plug>
 nnoremap <silent> <Plug>PluginNameFunction :<C-U>call <SID>dofunction()<CR>
+nnoremap <silent> <Plug>PluginNameOperator :set operatorfunc=pluginname#myoperator<CR>g@
 
 
 
@@ -31,7 +32,9 @@ nnoremap <silent> <Plug>PluginNameFunction :<C-U>call <SID>dofunction()<CR>
 " doesn't want us to.
 if !exists("g:pluginname_no_mappings") || ! g:pluginname_no_mappings
 " here we provide explicity key sequences for the mappings. by just refering tho the <Plug>mappings that we defined unconditionally.
-nmap gus <Plug>PluginNameFunction
+
+" gus<motion> , like gusiw, gusE, etc. will invoke myoperator in autoload/
+nmap gus <Plug>PluginNameOperator
 
 end
 
